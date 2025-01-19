@@ -6,85 +6,194 @@
     <title>Mod9l3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-<html>
-    <header>
-        <title>Kyle C's personal portfolio</title>
-    </header>
-
-    <body class="main">
-        <section>
-            <h1>Kyle Coffie's personal portfolio</h1>
-            <hr>
-            <img src="picture/profile pic.jpg" alt="Kyle enjoying coffee in Belgium">
-            <hr>
-        </section>
-        <div class="center">
-            <h2>About Me</h2>
-            <p>My most recent job was a service advisor at a gm dealership. Before that I've worn many hats </p>
-            <div class="grid-container">
-                <section class="item1">
-                    <h3>Education</h3>
-                    <ul>
-                        <li><a href="https://www.wardhigh.org/"> Bishop Ward High School </a></li>
-                        <li><a href="https://www.coffeyville.edu/"> Community College </a></li>
-                        <li><a href="https://www.nsuok.edu/tahlequah.aspx?_ga=2.18446330.217394597.1736709105-1344699029.1736709105&_gac=1.207744422.1736709105.EAIaIQobChMIr9uHyPHwigMVgyzUAR0_AC06EAAYASAAEgIfGvD_BwE"> NSUok </a></li>
-                        <li><a href="https://www.doane.edu"> Doane University </a></li>
-                        <li><a href="https:www.codingtemple.com"> Coding Temple </a></li>
-                    </ul>
-                </section>
-                <section class="item2">
-                    <h3>Career Goals</h3>
-                    <ul>
-                        <li>Expand my knowledge of my current skills</li>
-                        <li>Increase my salary</li>
-                        <li>Add value to the company and myself</li>
-                        <li>Become good enough to work freelance</li>
-                    </ul>
-                </section>
-                <section class="item3">
-                <h3>Personal Interests</h3>
-                <ul>
-                    <li>Learning about things that are of interest to me</li>
-                    <li>Buying, selling and fixing automotives</li>
-                    <li>Riding motorcycles</li>
-                    <li>Firepit under the stars</li>
-                    <li>Leaving places and people better than when I found them</li>
-                </ul>
-                </section>
+</head>
+<body>
+    <header class="container mt-4 mb-5 bg-success p-3 rounded">
+        
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <hr>
+                <img src="picture/profile pic.jpg" class="img-fluid rounded" alt="Kyle enjoying coffee in Belgium">
+                <hr>
             </div>
-            
-            <nav class="item4">
-                <h2>Projects</h2>
-                <p>My last assignment we learned how to use HTML forms, which includes various inputs</p>
-                <p><a href="https://github.com/KyleCoffie/Mod7L3/blob/main/BaCWF.html">Link to Github upload</a></p>
-                <p><a href="https://github.com/KyleCoffie/Mod7L3/blob/main/ENhtml5IT.html">Second part of assignment</a></p>
-                <p>In the link below is the assignment we learned about sql databases and how to manipulate date through postman</p>
-                <p><a href="https://github.com/KyleCoffie/mod6Mini/blob/main/app.py">Link to Github upload</a></p>
-                <p>One project in particular we had to create an interactive to-do-list. It was a fun challenge</p>
-                <p><a href="https://github.com/KyleCoffie/to-do-list/blob/main/To-do-list.py">Link to Github upload</a></p>
-            </nav>
-            <section class="item5">
-                <h2>Skills</h2>
-                <label for="points">Rating myself in the skills and Experience (0-10):</label>
-                <input type="range" id="points" name="points" min="5" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
-                <output for="points" >5</output>
-                <p>I dont feel like I have the confidence to call myself a software engineer but I do know that I'm getting better everyday</p>
-                <p>Giving myself a 5 out of 10 </p>
+            <div class="col-md-8">
+                <hr>
+                <h1 class="display-4">Kyle Coffie's personal portfolio</h1>
+                <p class="lead">Welcome to my developing Web resume</p>
+                <hr>
+            </div>
+        </div>
+    </header>
+    <div class="center">
+        <nav class="container p-3 my-4 rounded bg-light">
+            <div class="row">
+                <div class="col">
+        
+                    <h2 class="h4">Contact</h2>
+                    <p>Email: Kyle.coffie@live.com</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/kyle-coffie-280b0b96/" class="text-decoration-none">profile page</a></p>
+                </div>
+            </div>
+        </nav>
+        <section class="container p-3 my-4 rounded bg-light">
+            <h2 class="h3">About Me</h2>
+            <p>My daily life consist of selfcare, husband, dog/cat dad, homemaker, student, automotive hobbist. </p>
+        </section>
+        <div class="grid-container">
+            <section class="container p-3 my-4 rounded bg-light">
+                <h3 class="h4">Education Table</h3>
+                <table class="table table-success table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">High School</th>
+                            <th scope="col">Ju-Co</th>
+                            <th scope="col">University1</th>
+                            <th scope="col">University2</th>
+                            <th scope="col">Trade School</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><a href="https://www.wardhigh.org/" class="text-decoration-none link-opacity-100-hover link-secondary link-opacity-50"> Bishop Ward High School </a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td></td>
+                            <td><a href="https://www.coffeyville.edu/" class="text-decoration-none link-opacity-100-hover link-secondary link-opacity-50"> Community College </a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td></td>
+                            <td></td>
+                            <td><a href="https://www.nsuok.edu/tahlequah.aspx?_ga=2.18446330.217394597.1736709105-1344699029.1736709105&_gac=1.207744422.1736709105.EAIaIQobChMIr9uHyPHwigMVgyzUAR0_AC06EAAYASAAEgIfGvD_BwE" class="text-decoration-none link-opacity-100-hover link-secondary link-opacity-50"> NSUok </a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="https://www.doane.edu" class="text-decoration-none link-opacity-100-hover link-secondary link-opacity-50"> Doane University </a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="https:www.codingtemple.com" class="text-decoration-none link-opacity-100-hover link-secondary link-opacity-50"> Coding Temple </a></td>
+                        </tr>
+                    </tbody>
+                    <p>The schools are links to the homepage of the school!</p>
+                </table>
             </section>
-
-            
-            <section class="item6">
-            
-            <h2>Contact</h2>
-            <p>Email: Kyle.coffie@live.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/kyle-coffie-280b0b96/">profile page</a></p>
+            <section class="container p-3 my-4 rounded bg-light">
+                <h3 class="h4">Career Goals</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-success">Expand my knowledge of my current skills</li>
+                    <li class="list-group-item">Better my healthy lifestyle</li>
+                    <li class="list-group-item list-group-item-success">Add value to the company and myself</li>
+                    <li class="list-group-item">Become good enough to work freelance</li>
+                </ul>
+            </section>
+            <section class="container p-3 my-4 rounded bg-light">
+            <h3 class="h4">Personal Interests</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-success">Learning about things that are of interest to me</li>
+                <li class="list-group-item">Buying, selling and fixing automotives</li>
+                <li class="list-group-item list-group-item-success">Riding motorcycles</li>
+                <li class="list-group-item">Firepit under the stars</li>
+                <li class="list-group-item list-group-item-success">Leaving places and people better than when I found them</li>
+            </ul>
             </section>
         </div>
-        <footer>
-            <p>&copy; 2024 Kyle Coffie. All rights reserved</p>
-        </footer>
+        
+        <nav class="container p-3 my-4 rounded bg-light">
+            <h2 class="h3">Projects</h2>
+            <p>My last assignment we learned how to use HTML forms, which includes various inputs</p>
+            <p><a href="https://github.com/KyleCoffie/Mod7L3/blob/main/BaCWF.html" class="text-decoration-none link-opacity-100-hover link-success link-opacity-50">Link to Github upload</a></p>
+            <p><a href="https://github.com/KyleCoffie/Mod7L3/blob/main/ENhtml5IT.html" class="text-decoration-none link-opacity-100-hover link-success link-opacity-50">Second part of assignment</a></p>
+            <p>In the link below is the assignment we learned about sql databases and how to manipulate date through postman</p>
+            <p><a href="https://github.com/KyleCoffie/mod6Mini/blob/main/app.py" class="text-decoration-none link-opacity-100-hover link-success link-opacity-50">Link to Github upload</a></p>
+            <p>One project in particular we had to create an interactive to-do-list. It was a fun challenge</p>
+            <p><a href="https://github.com/KyleCoffie/to-do-list/blob/main/To-do-list.py" class="text-decoration-none link-opacity-100-hover link-success link-opacity-50">Link to Github upload</a></p>
+        </nav>
+        <section class="container p-3 my-4 rounded bg-light">
+            <h2 class="h3">Skills</h2>
+            <label for="points">Rating myself in the skills and Experience (0-10):</label>
+            <!-- <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off">
+            <label class="btn" for="option1">1</label>
+
+            <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+            <label class="btn" for="option2">2</label>
+
+            <input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off">
+            <label class="btn" for="option3">3</label>
+
+            <input type="radio" class="btn-check" name="options-base" id="option4" autocomplete="off">
+            <label class="btn" for="option4">4</label>
+
+            <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+            <label class="btn" for="option5">5</label>
+
+            <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+            <label class="btn" for="option6">6</label>
+
+            <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+            <label class="btn" for="option7">7</label>
+
+            <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+            <label class="btn" for="option8">8</label> -->
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined1" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined1">1</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined2" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined2">2</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined3" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined3">3</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined4" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined4">4</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined5" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined5">5</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined6" autocomplete="off" checked>
+            <label class="btn btn-outline-success" for="success-outlined6">6</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined7" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined7">7</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined8" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined8">8</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined9" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined9">9</label>
+
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined10" autocomplete="off">
+            <label class="btn btn-outline-success" for="success-outlined10">10</label>
+
+            <p>I dont feel like I have the confidence to call myself a software engineer but I do know that I'm getting better everyday</p>
+            <p>Giving myself a 6 out of 10 </p>
+        </section>        
+    </div>
+    <footer class="container p-3 my-4 rounded bg-success text-dark text-center">
+        <p>&copy; 2024 Kyle Coffie. All rights reserved</p>
+    </footer>
+
     
-    
-    </body>
+</body>
 </html>
